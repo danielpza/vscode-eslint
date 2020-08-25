@@ -1,3 +1,21 @@
+# VS Code ESLint extension (lsp server command only)
+
+Fork of VS Code Eslint extension to allow installing the eslint server from the command line:
+
+```sh
+# inside repo:
+npm link
+```
+
+And that's it, the server will be available under the name `eslint-server`:
+
+```sh
+eslint-server --stdio
+# {"jsonrpc":"2.0","method":"window/logMessage","params":{"type":3,"message":"ESLint server running in node v14.8.0"}}
+```
+
+Original docs follows:
+
 # VS Code ESLint extension
 
 [![Build Status](https://dev.azure.com/ms/vscode-eslint/_apis/build/status/Microsoft.vscode-eslint)](https://dev.azure.com/ms/vscode-eslint/_build/latest?definitionId=18)
